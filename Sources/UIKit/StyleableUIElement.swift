@@ -13,7 +13,7 @@ extension UILabel {
     /// The name of a style in the global `NamedStyles` registry. The getter
     /// always returns `nil`, and should not be used.
     @IBInspectable
-    public var bonMotStyleName: String? {
+    open var bonMotStyleName: String? {
         get { return nil }
         set { bonMotStyle = StyleableUIElementHelpers.lookUpSharedStyle(for: newValue, font: font) }
     }
@@ -46,7 +46,7 @@ extension UITextField {
     /// `defaultTextAttributes`. If you plan on styling them differently, use
     /// attributed strings directly.
     @IBInspectable
-    public var bonMotStyleName: String? {
+    open var bonMotStyleName: String? {
         get { return nil }
         set {
             guard let font = font else { fatalError("Unable to get the font. This is unexpected, see UIKitTests.testTextFieldPropertyBehavior") }
@@ -100,7 +100,7 @@ extension UITextView {
     /// `typingAttributes`. If you plan on styling them differently, use
     /// attributed strings directly.
     @IBInspectable
-    public var bonMotStyleName: String? {
+    open var bonMotStyleName: String? {
         get { return nil }
         set {
             let font: UIFont
@@ -156,7 +156,7 @@ extension UIButton {
     /// The name of a style in the global `NamedStyles` registry. The getter
     /// always returns `nil`, and should not be used.
     @IBInspectable
-    public var bonMotStyleName: String? {
+    open var bonMotStyleName: String? {
         get { return nil }
         set {
             guard let font = titleLabel?.font else { fatalError("Unable to get the font. This is unexpected; see UIKitTests.testTextFieldPropertyBehavior") }
