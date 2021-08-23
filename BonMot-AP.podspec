@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
                        DESC
   s.homepage         = "https://github.com/appareo-systems/BonMot"
   s.license          = 'MIT'
+  s.author           = { "Zev Eisenberg" => "zev@zeveisenberg.com" }
   s.source           = { :git => "https://github.com/appareo-systems/BonMot.git", :tag => s.version.to_s }
   s.requires_arc = true
 
