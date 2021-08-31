@@ -26,7 +26,6 @@ public enum AdaptiveStyle {
     /// Enable automatic scaling of fonts obtained using `UIFontMetrics`
     /// available on iOS 11+ based on the provided `textStyle` and optional
     /// `maxPointSize`. If `maxPointSize` is `nil` the font will grow unbounded.
-    @available(iOS 11, tvOS 11, *)
     case fontMetrics(textStyle: BonMotTextStyle, maxPointSize: CGFloat?)
 
     /// If the text is scaled above `size`, substitute the font named
